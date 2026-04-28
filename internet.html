@@ -5,9 +5,12 @@
   </head>
   <body bgcolor="white">
     <h3>The Internet</h3>
-    <p>The Internet is a global system of interconnected computer networks.</p>
+    <p>The <u onmouseleave="document.getElementById('b').setAttribute('hidden', '')" onmouseover="document.getElementById('b').removeAttribute('hidden')">Internet</u> is a global system of <u onmouseleave="document.getElementById('a').setAttribute('hidden', '')" onmouseover="document.getElementById('a').removeAttribute('hidden')">interconnected computer networks</u>.</p>
     
-    <p>It is the site of many malware attacks, including <u onclick="o()">viruses</u> and phishing attacks.</p>
+    <p>It is the site of many malware attacks, including <u onmouseover="o()" onclick="o()">viruses</u> and phishing attacks.</p>
+    <br><p>(Hover for images)</p>
+    <img hidden id="a" style="width:550px;height:400px;"src="https://1.bp.blogspot.com/-jjynCu9LHpc/Xk_cycryE3I/AAAAAAAAAyo/iyseiHPALzgNVB7Wqv9S7taBpQcHugRHQCEwYBhgL/s1600/networks.jpg">
+    <img hidden id="b" style="width:550px;height:400px;"src="https://th.bing.com/th/id/OIP.x9QZ4gwrDlvt3NFQM3HfjgHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
     <script>
     function o(current=1, max=50) {
       if (current > max) return;
